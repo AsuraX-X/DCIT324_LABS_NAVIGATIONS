@@ -8,7 +8,7 @@ Welcome! In this lab you will build a small multi-screen mobile app that demonst
 
 You will implement these using **either** React Navigation **or** Expo Router your choice, but pick one and use it consistently throughout your project (no mixing).
 
-You have **50 minutes** to complete this lab. This is a graded lab focused on navigation structure **do not spend time designing or styling screens.** Plain, unstyled text is completely fine. A screen just needs to render, show its name/some text, and be reachable through the correct navigator. Buttons/links can be plain `<Text>` or `<Button>` elements — no need for icons, images, colors, or layout polish unless it's required for a specific interaction (like showing passed data).
+You have **40 minutes** to complete this lab. This is a graded lab focused on navigation structure **do not spend time designing or styling screens.** Plain, unstyled text is completely fine. A screen just needs to render, show its name/some text, and be reachable through the correct navigator. Buttons/links can be plain `<Text>` or `<Button>` elements — no need for icons, images, colors, or layout polish unless it's required for a specific interaction (like showing passed data).
 
 ---
 
