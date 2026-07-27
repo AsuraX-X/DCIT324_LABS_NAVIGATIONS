@@ -2,11 +2,36 @@ import { useRouter } from "expo-router";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 const events = [
-  { id: "1", title: "Open day", date: "May 20", description: "Meet lecturers and explore campus facilities." },
-  { id: "2", title: "Hackathon", date: "May 22", description: "A 24-hour coding event for all students." },
-  { id: "3", title: "Career fair", date: "May 24", description: "Discover internships and job opportunities." },
-  { id: "4", title: "Music night", date: "May 27", description: "An evening of live performances on campus." },
-  { id: "5", title: "Campus clean-up", date: "May 29", description: "Join fellow students to keep the campus clean." },
+  {
+    id: "1",
+    title: "Open day",
+    date: "May 20",
+    description: "Meet lecturers and explore campus facilities.",
+  },
+  {
+    id: "2",
+    title: "Hackathon",
+    date: "May 22",
+    description: "A 24-hour coding event for all students.",
+  },
+  {
+    id: "3",
+    title: "Career fair",
+    date: "May 24",
+    description: "Discover internships and job opportunities.",
+  },
+  {
+    id: "4",
+    title: "Music night",
+    date: "May 27",
+    description: "An evening of live performances on campus.",
+  },
+  {
+    id: "5",
+    title: "Campus clean-up",
+    date: "May 29",
+    description: "Join fellow students to keep the campus clean.",
+  },
 ];
 
 export default function FeedScreen() {

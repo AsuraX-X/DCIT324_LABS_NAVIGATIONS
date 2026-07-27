@@ -3,10 +3,18 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function EventDetailsScreen() {
   const router = useRouter();
-  const params = useLocalSearchParams<{ id?: string; title?: string; date?: string; description?: string }>();
+  const params = useLocalSearchParams<{
+    id?: string;
+    title?: string;
+    date?: string;
+    description?: string;
+  }>();
   const title = typeof params.title === "string" ? params.title : "Event";
   const date = typeof params.date === "string" ? params.date : "N/A";
-  const description = typeof params.description === "string" ? params.description : "No details available.";
+  const description =
+    typeof params.description === "string"
+      ? params.description
+      : "No details available.";
 
   return (
     <View style={styles.container}>

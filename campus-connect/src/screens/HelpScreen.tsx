@@ -1,9 +1,18 @@
 import { StyleSheet, Text, View } from "react-native";
 
 const faqs = [
-  { question: "How do I edit my profile?", answer: "Open the Profile tab and tap Edit Profile." },
-  { question: "How do I view announcements?", answer: "Use the drawer menu and open Announcements." },
-  { question: "How do I see my timetable?", answer: "Open the Timetable tab from the dashboard." },
+  {
+    question: "How do I edit my profile?",
+    answer: "Open the Profile tab and tap Edit Profile.",
+  },
+  {
+    question: "How do I view announcements?",
+    answer: "Use the drawer menu and open Announcements.",
+  },
+  {
+    question: "How do I see my timetable?",
+    answer: "Open the Timetable tab from the dashboard.",
+  },
 ];
 
 export default function HelpScreen() {

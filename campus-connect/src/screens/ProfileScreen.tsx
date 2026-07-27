@@ -1,5 +1,5 @@
-import { useCallback, useState } from "react";
 import { useFocusEffect, useRouter } from "expo-router";
+import { useCallback, useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import { getProfile, Profile } from "../store/profile";
@@ -11,7 +11,7 @@ export default function ProfileScreen() {
   useFocusEffect(
     useCallback(() => {
       setProfile(getProfile());
-    }, [])
+    }, []),
   );
 
   const openEdit = () => {

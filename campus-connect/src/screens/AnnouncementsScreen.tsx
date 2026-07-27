@@ -1,11 +1,36 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 
 const announcements = [
-  { id: 1, title: "Library opens late", date: "May 10", text: "The library will remain open until midnight for revision week." },
-  { id: 2, title: "Sports day", date: "May 12", text: "Join the interfaculty football tournament at the main field." },
-  { id: 3, title: "Wi-Fi upgrade", date: "May 14", text: "Campus Wi-Fi will be upgraded across all lecture halls." },
-  { id: 4, title: "Health clinic", date: "May 16", text: "Free health screening is available at the clinic this week." },
-  { id: 5, title: "Student forum", date: "May 18", text: "A student forum will discuss transport and accommodation issues." },
+  {
+    id: 1,
+    title: "Library opens late",
+    date: "May 10",
+    text: "The library will remain open until midnight for revision week.",
+  },
+  {
+    id: 2,
+    title: "Sports day",
+    date: "May 12",
+    text: "Join the interfaculty football tournament at the main field.",
+  },
+  {
+    id: 3,
+    title: "Wi-Fi upgrade",
+    date: "May 14",
+    text: "Campus Wi-Fi will be upgraded across all lecture halls.",
+  },
+  {
+    id: 4,
+    title: "Health clinic",
+    date: "May 16",
+    text: "Free health screening is available at the clinic this week.",
+  },
+  {
+    id: 5,
+    title: "Student forum",
+    date: "May 18",
+    text: "A student forum will discuss transport and accommodation issues.",
+  },
 ];
 
 export default function AnnouncementsScreen() {

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { useLocalSearchParams, useRouter } from "expo-router";
+import { useEffect, useState } from "react";
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 
 import { getProfile, saveProfile } from "../store/profile";
@@ -18,13 +18,22 @@ export default function EditProfileScreen() {
   const profile = getProfile();
   const [name, setName] = useState(params.name ?? profile.name);
   const [bio, setBio] = useState(params.bio ?? profile.bio);
-  const [programme, setProgramme] = useState(params.programme ?? profile.programme);
+  const [programme, setProgramme] = useState(
+    params.programme ?? profile.programme,
+  );
 
   useEffect(() => {
     setName(params.name ?? profile.name);
     setBio(params.bio ?? profile.bio);
     setProgramme(params.programme ?? profile.programme);
-  }, [params.bio, params.name, params.programme, profile.bio, profile.name, profile.programme]);
+  }, [
+    params.bio,
+    params.name,
+    params.programme,
+    profile.bio,
+    profile.name,
+    profile.programme,
+  ]);
 
   const handleSave = () => {
     saveProfile({ ...profile, name, bio, programme });
@@ -34,9 +43,24 @@ export default function EditProfileScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Edit Profile</Text>
-      <TextInput style={styles.input} value={name} onChangeText={setName} placeholder="Name" />
-      <TextInput style={styles.input} value={bio} onChangeText={setBio} placeholder="Bio" />
-      <TextInput style={styles.input} value={programme} onChangeText={setProgramme} placeholder="Programme" />
+      <TextInput
+        style={styles.input}
+        value={name}
+        onChangeText={setName}
+        placeholder="Name"
+      />
+      <TextInput
+        style={styles.input}
+        value={bio}
+        onChangeText={setBio}
+        placeholder="Bio"
+      />
+      <TextInput
+        style={styles.input}
+        value={programme}
+        onChangeText={setProgramme}
+        placeholder="Programme"
+      />
       <Pressable style={styles.button} onPress={handleSave}>
         <Text style={styles.buttonText}>Save</Text>
       </Pressable>
